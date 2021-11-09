@@ -1,0 +1,95 @@
+.body {
+	background-color: #363636;
+}
+
+/*NAV*/
+.nav {
+	width: 100vw;
+	background: none;
+	position: fixed;
+	z-index: 9999;
+	display: flex;
+	height: 80px;
+	justify-content: flex-end;
+}
+
+.nav button {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	cursor: pointer;
+}
+.navdiv {
+	background-color: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	animation: animation2 1s;
+	border-bottom: #f90000 solid 2px;
+}
+.navdiv ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.invertImage {
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+
+.navdiv ul li img:hover {
+	cursor: pointer;
+}
+.navdiv ul li:nth-child(4) {
+	margin-left: 30px;
+}
+.center {
+	padding: 0px 25px;
+	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 0px 0px 0px 10px;
+	display: flex;
+	align-items: center;
+}
+.navdiv ul li {
+	font-weight: bold;
+	padding: 0px 12px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: animation 1.5s;
+}
+.navdiv a {
+	color: rgb(228, 228, 228);
+	text-transform: uppercase;
+}
+.navdiv a:hover {
+	color: #f90000;
+}
+
+@keyframes animation {
+	0% {
+		margin-right: calc(100vw + 100vw);
+	}
+	100% {
+		margin-right: 0;
+	}
+}
+@keyframes animation2 {
+	0% {
+		margin-right: calc(100vw);
+	}
+	100% {
+		margin-right: 0;
+	}
+}
+
+.arrow button {
+	float: right;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	z-index: 999;
+}
+/*HOME*/
